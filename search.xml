@@ -4,6 +4,50 @@
   
     
     <entry>
+      <title>编译原理</title>
+      <link href="2020/10/03/bian-yi-yuan-li/"/>
+      <url>2020/10/03/bian-yi-yuan-li/</url>
+      
+        <content type="html"><![CDATA[<h1 id="编译原理"><a href="#编译原理" class="headerlink" title="编译原理"></a>编译原理</h1><h2 id="1-编译原理概论"><a href="#1-编译原理概论" class="headerlink" title="1 编译原理概论"></a>1 编译原理概论</h2><h3 id="1-1-什么是编译程序"><a href="#1-1-什么是编译程序" class="headerlink" title="1.1 什么是编译程序"></a>1.1 什么是编译程序</h3><h4 id="1-编译程序"><a href="#1-编译程序" class="headerlink" title="1 编译程序"></a>1 编译程序</h4><p><img src="%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86.assets/image-20201003171100679.png" alt="image-20201003171100679"></p><p>source program to object program</p><h4 id="2-解释器-interpreter-与编译器-compiler"><a href="#2-解释器-interpreter-与编译器-compiler" class="headerlink" title="2 解释器(interpreter)与编译器(compiler)"></a>2 解释器(interpreter)与编译器(compiler)</h4><p><img src="%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86.assets/image-20201003171358672.png" alt="image-20201003171358672"></p><p>解释器是源程序的执行系统。</p><p>编译器是源程序的转换系统。</p><h4 id="3-JIT（Just-Intime-Compiler）编译器"><a href="#3-JIT（Just-Intime-Compiler）编译器" class="headerlink" title="3 JIT（Just Intime Compiler）编译器"></a>3 JIT（Just Intime Compiler）编译器</h4><p>JIT是动态编译器的一种。Java程序一开始是通过<strong>解释器</strong>进行<strong>解释执行</strong>的。当JVM会把频繁执行的代码或方法认定为<strong>热点代码（Hot Spot Code）</strong>，然后JVM会把这些代码编译成与本地平台相关的机器码，并进行各种层次的优化。</p><h4 id="4-高级语言编译过程"><a href="#4-高级语言编译过程" class="headerlink" title="4 高级语言编译过程"></a>4 高级语言编译过程</h4><p><img src="%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86.assets/image-20201003171742627.png" alt="image-20201003171742627"></p><h3 id="1-2-编译过程概述"><a href="#1-2-编译过程概述" class="headerlink" title="1.2 编译过程概述"></a>1.2 编译过程概述</h3><h4 id="总览"><a href="#总览" class="headerlink" title="总览"></a>总览</h4><p><img src="%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86.assets/image-20201003171845957.png"></p><h4 id="词法分析（lexical-analysis-or-scanning）"><a href="#词法分析（lexical-analysis-or-scanning）" class="headerlink" title="词法分析（lexical analysis or scanning）"></a>词法分析（lexical analysis or scanning）</h4><p>任务：从左到右一个字符一个字符地读入源程序，对构成源程序的字符流进行扫描和分解，从而识别出一个个<strong>单词(Token)**。单词表示成</strong>二元式（单词的种别，单词自身值）**</p><h4 id="语法分析-syntax-analysis-or-parsing"><a href="#语法分析-syntax-analysis-or-parsing" class="headerlink" title="语法分析(syntax analysis or parsing)"></a>语法分析(syntax analysis or parsing)</h4><p><img src="%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86.assets/image-20201003173157150.png" alt="image-20201003173157150"></p><h3 id="1-3-编译程序的结构"><a href="#1-3-编译程序的结构" class="headerlink" title="1.3 编译程序的结构"></a>1.3 编译程序的结构</h3><h3 id="1-4-编译阶段的组合"><a href="#1-4-编译阶段的组合" class="headerlink" title="1.4 编译阶段的组合"></a>1.4 编译阶段的组合</h3><h3 id="1-5-编译技术和软件工具"><a href="#1-5-编译技术和软件工具" class="headerlink" title="1.5 编译技术和软件工具"></a>1.5 编译技术和软件工具</h3><h2 id="2-文法与语言"><a href="#2-文法与语言" class="headerlink" title="2 文法与语言"></a>2 文法与语言</h2><h2 id="3-词法分析"><a href="#3-词法分析" class="headerlink" title="3 词法分析"></a>3 词法分析</h2><h2 id="4-语法分析—-自上而下分析"><a href="#4-语法分析—-自上而下分析" class="headerlink" title="4 语法分析—-自上而下分析"></a>4 语法分析—-自上而下分析</h2><p>面对的问题：左递归和回溯</p><h3 id="LL-1-分析法"><a href="#LL-1-分析法" class="headerlink" title="LL(1)分析法"></a>LL(1)分析法</h3><h5 id="LL-1-分析准备"><a href="#LL-1-分析准备" class="headerlink" title="LL(1)分析准备"></a>LL(1)分析准备</h5><h6 id="左递归的消除"><a href="#左递归的消除" class="headerlink" title="左递归的消除"></a>左递归的消除</h6><ol><li>直接左递归</li><li>间接左递归</li></ol><p>间接左递归代入转为直接左递归。间接左递归中不同代入顺序会有不同结果。</p><p>引入新的非终结符直接左递归变右递归。</p><img src="编译原理.assets/image-20201003180915680.png" alt="image-20201003180915680" style="zoom:50%;" /><img src="编译原理.assets/image-20201003180849426.png" alt="image-20201003180849426" style="zoom:50%;" /><p>消除左递归后注意删除那些永远无法到达的产生规则。</p><h6 id="提取左公因子"><a href="#提取左公因子" class="headerlink" title="提取左公因子"></a>提取左公因子</h6><p>若A→αβ1|αβ2|…|αβn，提取左公共因子后变为A→αA’，A’→ β1|β2|…|βn</p><h5 id="LL-1-文法"><a href="#LL-1-文法" class="headerlink" title="LL(1)文法"></a>LL(1)文法</h5><h6 id="开始符号集"><a href="#开始符号集" class="headerlink" title="开始符号集"></a>开始符号集</h6><p>可以包含空字。  </p><h6 id="后继符合集"><a href="#后继符合集" class="headerlink" title="后继符合集"></a>后继符合集</h6><p>不包含空字。</p><p>注意开始符合的后跟符号集一定有#（‘#’做为输入串的结束符）</p><h6 id="选择符号集"><a href="#选择符号集" class="headerlink" title="选择符号集"></a>选择符号集</h6><p><img src="%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86.assets/image-20201003182246388.png" alt="image-20201003182246388"></p><h5 id="LL-1-文法定义"><a href="#LL-1-文法定义" class="headerlink" title="LL(1)文法定义"></a>LL(1)文法定义</h5><p><img src="%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86.assets/image-20201003182410196.png" alt="image-20201003182410196"></p><h3 id="递归下降分析程序构造"><a href="#递归下降分析程序构造" class="headerlink" title="递归下降分析程序构造"></a>递归下降分析程序构造</h3><h3 id="预测分析程序"><a href="#预测分析程序" class="headerlink" title="预测分析程序"></a>预测分析程序</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机基础课程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 编译原理 </tag>
+            
+            <tag> 计算机基础 </tag>
+            
+            <tag> 课程 </tag>
+            
+            <tag> 复习笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="2020/10/03/xin-jian-wen-ben-wen-dang/"/>
+      <url>2020/10/03/xin-jian-wen-ben-wen-dang/</url>
+      
+        <content type="html"><![CDATA[<h1 id="编译原理"><a href="#编译原理" class="headerlink" title="编译原理"></a>编译原理</h1><h2 id="1-编译原理概论"><a href="#1-编译原理概论" class="headerlink" title="1 编译原理概论"></a>1 编译原理概论</h2><h3 id="1-1-什么是编译程序"><a href="#1-1-什么是编译程序" class="headerlink" title="1.1 什么是编译程序"></a>1.1 什么是编译程序</h3><h4 id="1-编译程序"><a href="#1-编译程序" class="headerlink" title="1 编译程序"></a>1 编译程序</h4><p><img src="C:\Users\Thinkpad\AppData\Roaming\Typora\typora-user-images\image-20201003171100679.png" alt="image-20201003171100679"></p><p>source program to object program</p><h4 id="2-解释器-interpreter-与编译器-compiler"><a href="#2-解释器-interpreter-与编译器-compiler" class="headerlink" title="2 解释器(interpreter)与编译器(compiler)"></a>2 解释器(interpreter)与编译器(compiler)</h4><p><img src="C:\Users\Thinkpad\AppData\Roaming\Typora\typora-user-images\image-20201003171358672.png" alt="image-20201003171358672"></p><p>解释器是源程序的执行系统。</p><p>编译器是源程序的转换系统。</p><h4 id="3-JIT（Just-Intime-Compiler）编译器"><a href="#3-JIT（Just-Intime-Compiler）编译器" class="headerlink" title="3 JIT（Just Intime Compiler）编译器"></a>3 JIT（Just Intime Compiler）编译器</h4><p>JIT是动态编译器的一种。Java程序一开始是通过<strong>解释器</strong>进行<strong>解释执行</strong>的。当JVM会把频繁执行的代码或方法认定为<strong>热点代码（Hot Spot Code）</strong>，然后JVM会把这些代码编译成与本地平台相关的机器码，并进行各种层次的优化。</p><h4 id="4-高级语言编译过程"><a href="#4-高级语言编译过程" class="headerlink" title="4 高级语言编译过程"></a>4 高级语言编译过程</h4><p><img src="C:\Users\Thinkpad\AppData\Roaming\Typora\typora-user-images\image-20201003171742627.png" alt="image-20201003171742627"></p><h3 id="1-2-编译过程概述"><a href="#1-2-编译过程概述" class="headerlink" title="1.2 编译过程概述"></a>1.2 编译过程概述</h3><h4 id="总览"><a href="#总览" class="headerlink" title="总览"></a>总览</h4><p><img src="C:\Users\Thinkpad\AppData\Roaming\Typora\typora-user-images\image-20201003171845957.png"></p><h4 id="词法分析-lexical-analysis-or-scanning"><a href="#词法分析-lexical-analysis-or-scanning" class="headerlink" title="词法分析 (lexical analysis or scanning)"></a>词法分析 (lexical analysis or scanning)</h4><p>任务：从左到右一个字符一个字符地读入源程序，对构成源程序的字符流进行扫描和分解，从而识别出一个个<strong>单词(Token)**。单词表示成</strong>二元式（单词的种别，单词自身值）**</p><h4 id="语法分析-syntax-analysis-or-parsing"><a href="#语法分析-syntax-analysis-or-parsing" class="headerlink" title="语法分析 (syntax analysis or parsing)"></a>语法分析 (syntax analysis or parsing)</h4><p><img src="%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86.assets/image-20201003173157150.png" alt="image-20201003173157150"></p><p>判断输入串是否构成一个语法上正确的程序,并生成语法树</p><h4 id="语义分析-semantic-analysis"><a href="#语义分析-semantic-analysis" class="headerlink" title="语义分析 (semantic analysis)"></a>语义分析 (semantic analysis)</h4><p>审查源程序是否有语义错误，为代码生成阶段收集类型信息</p><h4 id="中间代码生成-intermediate-code-generation"><a href="#中间代码生成-intermediate-code-generation" class="headerlink" title="中间代码生成 (intermediate code generation)"></a>中间代码生成 (intermediate code generation)</h4><h4 id="代码优化-code-optimization"><a href="#代码优化-code-optimization" class="headerlink" title="代码优化 (code optimization)"></a>代码优化 (code optimization)</h4><h4 id="目标代码生成-code-generation"><a href="#目标代码生成-code-generation" class="headerlink" title="目标代码生成 (code generation)"></a>目标代码生成 (code generation)</h4><h3 id="1-3-编译程序的结构"><a href="#1-3-编译程序的结构" class="headerlink" title="1.3 编译程序的结构"></a>1.3 编译程序的结构</h3><h3 id="1-4-编译阶段的组合"><a href="#1-4-编译阶段的组合" class="headerlink" title="1.4 编译阶段的组合"></a>1.4 编译阶段的组合</h3><h3 id="1-5-编译技术和软件工具"><a href="#1-5-编译技术和软件工具" class="headerlink" title="1.5 编译技术和软件工具"></a>1.5 编译技术和软件工具</h3>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>C++大作业--XXX管理程序</title>
       <link href="2020/10/02/c-da-zuo-ye/"/>
       <url>2020/10/02/c-da-zuo-ye/</url>
