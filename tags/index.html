@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="标签, dyldw的博客">
-    <meta name="description" content="测试用博客">
+    <meta name="description" content="关于计算机，编程，读书和动漫的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -143,7 +143,7 @@
         <div class="logo-name">dyldw的博客</div>
         <div class="logo-desc">
             
-            测试用博客
+            关于计算机，编程，读书和动漫的博客
             
         </div>
     </div>
@@ -311,7 +311,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                测试
+                欢迎来到这个博客 (⑅˃◡˂⑅)
                 
             </div>
 
@@ -358,10 +358,52 @@
             </div>
             <div class="tag-chips">
                 
+                
+                <a href="/tags/C/" title="C++: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="C++" style="background-color: #F9EBEA;">C++
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%A4%A7%E4%B8%80/" title="大一: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="大一" style="background-color: #F5EEF8;">大一
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
 </div>
+
+    
+    <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
+<style type="text/css">
+    #tag-wordcloud {
+        width: 100%;
+        height: 300px;
+    }
+</style>
+
+<div class="container" data-aos="fade-up">
+    <div class="card">
+        <div id="tag-wordcloud" class="card-content"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
+<script type="text/javascript">
+    
+
+    $('#tag-wordcloud').jQCloud([{"text":"C++","weight":1,"link":"/tags/C/"},{"text":"大一","weight":1,"link":"/tags/大一/"}], {
+        autoResize: true
+    });
+</script>
 
     
 
@@ -434,7 +476,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">86</span>&nbsp;字
+                class="white-color">7.6k</span>&nbsp;字
             
             
             
@@ -561,6 +603,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
 
 </html>

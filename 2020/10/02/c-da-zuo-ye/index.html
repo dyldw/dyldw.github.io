@@ -1,0 +1,2434 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="C++大作业--XXX管理程序, dyldw的博客">
+    <meta name="description" content="关于计算机，编程，读书和动漫的博客">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>C++大作业--XXX管理程序 | dyldw的博客</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.jpg" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">dyldw的博客</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.jpg" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">dyldw的博客</div>
+        <div class="logo-desc">
+            
+            关于计算机，编程，读书和动漫的博客
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/dyldw" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/dyldw" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">C++大作业--XXX管理程序</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C++</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%A4%A7%E4%B8%80/">
+                                <span class="chip bg-color">大一</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-10-02
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2020-10-03
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    7.5k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    37 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>理工科大一往往会学习C/C++，期末会有大作业。这篇文章就是一个简单的C++大作业程序。我也是大一，所以觉着哪里写得不好欢迎在评论区提出。程序总体上讲是个“总分总”结构。</p>
+<h2 id="一-实现这个程序要八步。"><a href="#一-实现这个程序要八步。" class="headerlink" title="一  实现这个程序要八步。"></a><strong>一  实现这个程序要八步。</strong></h2><h2 id="第一步-程序的功能设计"><a href="#第一步-程序的功能设计" class="headerlink" title="第一步 程序的功能设计"></a><strong>第一步 程序的功能设计</strong></h2><p>程序的目标有两个。一是辅助我备考四六级，帮助生活和提高效率。二是提供一些娱乐活动。</p>
+<p>针对这两个目标，我设计了六个功能—单词助手、计划待办、密码库、聊天室、3D坦克大战、趣味围棋。</p>
+<p>其中单词助手、计划待办、密码库为备考四六级和提高账户管理效率而做的。聊天室、趣味围棋和3D坦克大战是为娱乐而设计的。</p>
+<p>以下分别通过图片展示</p>
+<p><img src="https://pic4.zhimg.com/v2-b031d023781ced2b5571bff1c131c0cf_b.png" alt="img"></p>
+<p>想出一个复杂的密码和账户总是非常麻烦，要记住密码就更麻烦了。而简单的密码也不安全。这部分功能就可以解决这个问题。</p>
+<p><img src="https://pic4.zhimg.com/v2-b637b6e194b42e90e019b7f04c509b43_b.png" alt="img"></p>
+<p>计划本。因为我经常忘事情所以需要个计划本。（PS：不过我觉着计划还是记了纸上更有效）</p>
+<p><img src="https://pic3.zhimg.com/v2-3d358ebc50b2bc585fdd1c1944ab3e76_b.png" alt="img"></p>
+<p>单词本，是为了9月的四级考试而准备的。</p>
+<p><img src="https://pic1.zhimg.com/v2-1cd02b82e61927b78234fb6ccf97d21c_b.png" alt="img"></p>
+<p>趣味围棋，我是围棋两段来着。现在还经常看看围棋视频。不过棋力不行了。另外这个程序的提子，数气，判断胜负之类的都没做，应该说是个五子棋比较合适。以后再完善，现在就这样吧。</p>
+<p><img src="https://pic3.zhimg.com/v2-7d835cd53db1edd1b6d573421f5fe822_b.png" alt="img"></p>
+<p>聊天室，本来想做进行安全加密的聊天室，然后可以在外网联络的那种。但是时间不够。所以只是一个简单的聊天室。</p>
+<p><img src="https://pic2.zhimg.com/v2-1bc9014d46b0e05b1470b38bd7ec6c3d_b.png" alt="img"></p>
+<p> 这个是我用unity做的游戏。动画、模型、声音来自unity官方教程。我也是照着教程来的。PS：期间我还尝试过UE4开发游戏，不过时间不够没有做出一个比较好的作品。Unity是C#，UE4是C++。不知道C#的可不可以交C++的作业。</p>
+<p>功能很杂是因为把一些以前的程序也整合了整合放进去了，所以有点不伦不类。</p>
+<p><img src="https://pic2.zhimg.com/v2-2ea40190aa7fe2464864b1f259f8b315_b.png" alt="img"></p>
+<p>这个程序的部分文件</p>
+<p>其实上图的文件只能实现前四个功能，后两个功能是直接调用了一些以前写的程序来完成的。分开是因为聊天室功能还要分成客户端和服务端，不方便弄成一个，而3D坦克大战是用Unity做的游戏，放不进去。</p>
+<h2 id="第二步-搭好基础设施"><a href="#第二步-搭好基础设施" class="headerlink" title="第二步 搭好基础设施"></a>第二步 搭好基础设施</h2><p>对于前三个功能，我们可以看到都属于增删改查类型的，所以考虑先设计一个类模板，提供共同的操作，这样不管是扩展程序，deBug还是写程序都会简单很多。然后本着练习的原则，没有选择STL，而是自己做一个链表模板。</p>
+<p>下面是链表模板的介绍（list.h）。</p>
+<p>首先是节点Node类，这里为了方便写代码所以用的双向的。单向的实现一些功能会更麻烦。</p>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">typename</span> T<span class="token operator">></span> <span class="token keyword">class</span> <span class="token class-name">Node</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    Node<span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token operator">*</span> next<span class="token punctuation">;</span>
+    Node<span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token operator">*</span> prev<span class="token punctuation">;</span>
+    T content<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token function">Node</span><span class="token punctuation">(</span>T content<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        next <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+        prev <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token operator">-</span><span class="token operator">></span>content <span class="token operator">=</span> content<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">~</span><span class="token function">Node</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        next <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+        prev <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span></code></pre>
+<p>接着是List类了，需要注意的是类模板声明和定义最好都写在一起。</p>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token comment" spellcheck="true">//remove()要求超载==</span>
+<span class="token comment" spellcheck="true">//</span>
+<span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">typename</span> T<span class="token operator">></span> <span class="token keyword">class</span> <span class="token class-name">List</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    Node<span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token operator">*</span> head<span class="token punctuation">;</span>
+    Node<span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token operator">*</span> tail<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> length<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//链表中节点个数，默认构造的链表长度为0。</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token function">List</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        head <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+        tail <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+        length <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">~</span><span class="token function">List</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"空链表"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+                <span class="token comment" spellcheck="true">//从尾删到头</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>tail <span class="token operator">!=</span> <span class="token keyword">nullptr</span><span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            Node<span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token operator">*</span> temp <span class="token operator">=</span> tail<span class="token punctuation">;</span>
+            tail <span class="token operator">=</span> tail<span class="token operator">-</span><span class="token operator">></span>prev<span class="token punctuation">;</span>
+            temp<span class="token operator">-</span><span class="token operator">></span>prev <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+            <span class="token keyword">delete</span> temp<span class="token punctuation">;</span>
+            length<span class="token operator">--</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//cout &lt;&lt; "length=" &lt;&lt; length &lt;&lt; endl;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//list的基本操作</span>
+    <span class="token keyword">void</span> <span class="token function">append</span><span class="token punctuation">(</span><span class="token keyword">const</span> T content<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token comment" spellcheck="true">//分两种情况，链表为空时与链表非空时   </span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>head <span class="token operator">==</span> <span class="token keyword">nullptr</span><span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            head <span class="token operator">=</span> <span class="token keyword">new</span> Node<span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token punctuation">(</span>content<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            tail <span class="token operator">=</span> head<span class="token punctuation">;</span>
+            length <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            Node<span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token operator">*</span> temp <span class="token operator">=</span> tail<span class="token punctuation">;</span>
+            tail<span class="token operator">=</span><span class="token keyword">new</span> Node<span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token punctuation">(</span>content<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            temp<span class="token operator">-</span><span class="token operator">></span>next <span class="token operator">=</span> tail<span class="token punctuation">;</span>
+            tail<span class="token operator">-</span><span class="token operator">></span>prev <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+            length<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">remove</span><span class="token punctuation">(</span><span class="token keyword">const</span> T content<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"空链表"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+                <span class="token comment" spellcheck="true">//从尾开始找，一直找到头</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>Node<span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token operator">*</span> temp <span class="token operator">=</span> tail<span class="token punctuation">;</span> temp <span class="token operator">!=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span> temp <span class="token operator">=</span> temp<span class="token operator">-</span><span class="token operator">></span>prev<span class="token punctuation">)</span> 
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>temp<span class="token operator">-</span><span class="token operator">></span>content <span class="token operator">==</span> content<span class="token punctuation">)</span><span class="token comment" spellcheck="true">//要求重载==</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                                <span class="token comment" spellcheck="true">//分三种情况，删头结点，删中间节点，删尾节点 </span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>temp <span class="token operator">==</span> tail<span class="token punctuation">)</span>
+                <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                    tail <span class="token operator">=</span> tail<span class="token operator">-</span><span class="token operator">></span>prev<span class="token punctuation">;</span>
+                    temp<span class="token operator">-</span><span class="token operator">></span>prev <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+                    <span class="token keyword">if</span> <span class="token punctuation">(</span>tail <span class="token operator">!=</span> <span class="token keyword">nullptr</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">//由于tail前移了一次没有检查，所以此处来检查</span>
+                    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                        tail<span class="token operator">-</span><span class="token operator">></span>next <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+                    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+                    <span class="token keyword">delete</span> temp<span class="token punctuation">;</span>
+                    length<span class="token operator">--</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//每次删除和添加都要注意。</span>
+                    <span class="token keyword">return</span><span class="token punctuation">;</span>
+                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+                <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>temp <span class="token operator">==</span> head<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                    head <span class="token operator">=</span> head<span class="token operator">-</span><span class="token operator">></span>next<span class="token punctuation">;</span>
+                    temp<span class="token operator">-</span><span class="token operator">></span>next <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+                    <span class="token keyword">if</span> <span class="token punctuation">(</span>head <span class="token operator">!=</span> <span class="token keyword">nullptr</span><span class="token punctuation">)</span>
+                    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                        head<span class="token operator">-</span><span class="token operator">></span>prev <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+                    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+                    <span class="token keyword">delete</span> temp<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//此处误写成head导致析构时发生BUG</span>
+                    length<span class="token operator">--</span><span class="token punctuation">;</span>
+                    <span class="token keyword">return</span><span class="token punctuation">;</span>
+                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+                <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                    temp<span class="token operator">-</span><span class="token operator">></span>next<span class="token operator">-</span><span class="token operator">></span>prev <span class="token operator">=</span> temp<span class="token operator">-</span><span class="token operator">></span>prev<span class="token punctuation">;</span>
+                    temp<span class="token operator">-</span><span class="token operator">></span>prev<span class="token operator">-</span><span class="token operator">></span>next <span class="token operator">=</span> temp<span class="token operator">-</span><span class="token operator">></span>next<span class="token punctuation">;</span>
+                    temp<span class="token operator">-</span><span class="token operator">></span>next <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+                    temp<span class="token operator">-</span><span class="token operator">></span>prev <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+                    <span class="token keyword">delete</span> temp<span class="token punctuation">;</span>
+                    length<span class="token operator">--</span><span class="token punctuation">;</span>
+                    <span class="token keyword">return</span><span class="token punctuation">;</span>
+                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//remove()没有对index进行上下界的检查，过程中可能返回nullptr使用时要注意。</span>
+    <span class="token keyword">void</span> <span class="token function">remove</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"空链表"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        Node<span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment" spellcheck="true">//下面这部分删除直接调用remove(temp->content); 会更加简洁</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>temp <span class="token operator">==</span> tail<span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            tail <span class="token operator">=</span> tail<span class="token operator">-</span><span class="token operator">></span>prev<span class="token punctuation">;</span>
+            temp<span class="token operator">-</span><span class="token operator">></span>prev <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>tail <span class="token operator">!=</span> <span class="token keyword">nullptr</span><span class="token punctuation">)</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                tail<span class="token operator">-</span><span class="token operator">></span>next <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">delete</span> temp<span class="token punctuation">;</span>
+            length<span class="token operator">--</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>temp <span class="token operator">==</span> head<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            head <span class="token operator">=</span> head<span class="token operator">-</span><span class="token operator">></span>next<span class="token punctuation">;</span>
+            temp<span class="token operator">-</span><span class="token operator">></span>next <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>head <span class="token operator">!=</span> <span class="token keyword">nullptr</span><span class="token punctuation">)</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                head<span class="token operator">-</span><span class="token operator">></span>prev <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">delete</span> temp<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//此处误写成head导致析构时发生BUG</span>
+            length<span class="token operator">--</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            temp<span class="token operator">-</span><span class="token operator">></span>next<span class="token operator">-</span><span class="token operator">></span>prev <span class="token operator">=</span> temp<span class="token operator">-</span><span class="token operator">></span>prev<span class="token punctuation">;</span>
+            temp<span class="token operator">-</span><span class="token operator">></span>prev<span class="token operator">-</span><span class="token operator">></span>next <span class="token operator">=</span> temp<span class="token operator">-</span><span class="token operator">></span>next<span class="token punctuation">;</span>
+            temp<span class="token operator">-</span><span class="token operator">></span>next <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+            temp<span class="token operator">-</span><span class="token operator">></span>prev <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+            <span class="token keyword">delete</span> temp<span class="token punctuation">;</span>
+            length<span class="token operator">--</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//先删后加==修改</span>
+    <span class="token keyword">void</span> <span class="token function">replace</span><span class="token punctuation">(</span><span class="token keyword">const</span> T oldContent<span class="token punctuation">,</span> <span class="token keyword">const</span> T newContent<span class="token punctuation">)</span>
+    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"空链表"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token function">remove</span><span class="token punctuation">(</span>oldContent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">append</span><span class="token punctuation">(</span>newContent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">replace</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">,</span> <span class="token keyword">const</span> T newContent<span class="token punctuation">)</span>
+    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"空链表"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token function">remove</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">append</span><span class="token punctuation">(</span>newContent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"空链表"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token punctuation">(</span><span class="token function">find</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span>content<span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span><span class="token string">" "</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">resPrint</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"空链表"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token punctuation">(</span><span class="token function">find</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span>content<span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    Node<span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token operator">*</span> <span class="token function">find</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token comment" spellcheck="true">//index=0是头节点</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"空链表"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>index <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                        <span class="token keyword">return</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        Node<span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token operator">*</span> temp <span class="token operator">=</span> head<span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> index <span class="token operator">&amp;&amp;</span> temp <span class="token operator">!=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            temp <span class="token operator">=</span> temp<span class="token operator">-</span><span class="token operator">></span>next<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> temp<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    Node<span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token operator">*</span> <span class="token function">find</span><span class="token punctuation">(</span><span class="token keyword">const</span> T content<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"空链表"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>Node<span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token operator">*</span> temp <span class="token operator">=</span> tail<span class="token punctuation">;</span> temp <span class="token operator">!=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span> temp <span class="token operator">=</span> temp<span class="token operator">-</span><span class="token operator">></span>prev<span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>temp<span class="token operator">-</span><span class="token operator">></span>content <span class="token operator">==</span> content<span class="token punctuation">)</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span> temp<span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"没有找到"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> <span class="token function">getLength</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span> <span class="token keyword">return</span> length<span class="token punctuation">;</span> <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+    <span class="token keyword">bool</span> <span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span>length <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//list的文件操作(save会覆盖原文件，所以最好自动加载)</span>
+    <span class="token keyword">void</span> <span class="token function">saveDatFile</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span><span class="token operator">*</span> fileName <span class="token operator">=</span> <span class="token string">"listFile.dat"</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        T tempContent<span class="token punctuation">;</span>
+        ofstream <span class="token function">outFile</span><span class="token punctuation">(</span>fileName<span class="token punctuation">,</span> ios<span class="token operator">::</span>out <span class="token operator">|</span> ios<span class="token operator">::</span>binary<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            tempContent <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token function">find</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span>content<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            outFile<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">char</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>tempContent<span class="token punctuation">,</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>tempContent<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        outFile<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">loadDatFile</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span><span class="token operator">*</span> fileName <span class="token operator">=</span> <span class="token string">"listFile.dat"</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        T tempContent<span class="token punctuation">;</span>
+        ifstream <span class="token function">inFile</span><span class="token punctuation">(</span>fileName<span class="token punctuation">,</span> ios<span class="token operator">::</span>in <span class="token operator">|</span> ios<span class="token operator">::</span>binary<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>inFile<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"打开文件失败"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>inFile<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">char</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>tempContent<span class="token punctuation">,</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>tempContent<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token function">append</span><span class="token punctuation">(</span>tempContent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">initialDatFile</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span><span class="token operator">*</span> fileName <span class="token operator">=</span> <span class="token string">"listFile.dat"</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        ofstream <span class="token function">outFile</span><span class="token punctuation">(</span>fileName<span class="token punctuation">,</span> ios<span class="token operator">::</span>out <span class="token operator">|</span> ios<span class="token operator">::</span>binary<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        outFile<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">exportTxtFile</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span><span class="token operator">*</span> datFileName <span class="token operator">=</span> <span class="token string">"listFile.dat"</span><span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">char</span><span class="token operator">*</span> txtFileName <span class="token operator">=</span> <span class="token string">"listFile.txt"</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        T tempContent<span class="token punctuation">;</span>
+        ifstream <span class="token function">inFile</span><span class="token punctuation">(</span>datFileName<span class="token punctuation">,</span> ios<span class="token operator">::</span>in <span class="token operator">|</span> ios<span class="token operator">::</span>binary<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>inFile<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"打开文件失败"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>inFile<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">char</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>tempContent<span class="token punctuation">,</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>tempContent<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">//导出Txt未完成</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//运算符重载，方便作为可增长的向量使用，暂时没有用。</span>
+    T<span class="token operator">&amp;</span> <span class="token keyword">operator</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">int</span> index<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token function">find</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span>content<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span></code></pre>
+<p>这样第一个文件”list.h”就OK了。有了类模板作为基础设施，之后的工作就十分简单了。</p>
+<h2 id="第三步-设置各个独立的上层建筑"><a href="#第三步-设置各个独立的上层建筑" class="headerlink" title="第三步 设置各个独立的上层建筑"></a>第三步 设置各个独立的上层建筑</h2><p>上层建筑是指三个类。Password类，Word类，Plan类</p>
+<p>下面是Password类</p>
+<p>“password.h”</p>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">pragma</span> warning(disable:4996)</span>
+<span class="token macro property">#<span class="token directive keyword">pragma</span> once</span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;time.h></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;cstdlib></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;ctime></span></span><span class="token comment" spellcheck="true">//可能不需要包含它</span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"common.h"</span></span>
+
+<span class="token keyword">class</span> <span class="token class-name">Password</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">char</span> username<span class="token punctuation">[</span><span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> password<span class="token punctuation">[</span><span class="token number">256</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> url<span class="token punctuation">[</span><span class="token number">256</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> tag<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> localDate<span class="token punctuation">[</span><span class="token number">30</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//strlen显示大小是4，但多次实验发现实际大小是26，很奇怪。为保险起见，使用大小是30，</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">void</span> <span class="token function">setLocalDate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        time_t now <span class="token operator">=</span> <span class="token function">time</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment" spellcheck="true">//当前系统的当前日期/时间</span>
+        <span class="token keyword">char</span><span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token function">ctime</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>now<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//把 now 转换为字符串形式ctime(&amp;now);</span>
+        <span class="token function">strcpy</span><span class="token punctuation">(</span>localDate<span class="token punctuation">,</span> temp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">setPassword</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">int</span> length <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">bool</span> flag <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            password<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">randomKind</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        password<span class="token punctuation">[</span>length<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'\0'</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">setAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token function">setPassword</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"账号名称："</span><span class="token punctuation">;</span>
+        cin <span class="token operator">>></span> username<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"相关网址："</span><span class="token punctuation">;</span>
+        cin <span class="token operator">>></span> url<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"此次随机的密码："</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> password <span class="token operator">&lt;&lt;</span> <span class="token string">"  "</span> <span class="token operator">&lt;&lt;</span> <span class="token function">strlen</span><span class="token punctuation">(</span>password<span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"位"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"1重来一次 2自定义 3退出"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            <span class="token keyword">char</span> choice<span class="token punctuation">;</span>
+            cin <span class="token operator">>></span> choice<span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>choice <span class="token operator">==</span> <span class="token string">'1'</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token function">setPassword</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                cout <span class="token operator">&lt;&lt;</span> password <span class="token operator">&lt;&lt;</span> <span class="token string">"  "</span> <span class="token operator">&lt;&lt;</span> <span class="token function">strlen</span><span class="token punctuation">(</span>password<span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"位"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+                <span class="token function">setLocalDate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>choice <span class="token operator">==</span> <span class="token string">'2'</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                cin <span class="token operator">>></span> password<span class="token punctuation">;</span>
+                cout <span class="token operator">&lt;&lt;</span> password <span class="token operator">&lt;&lt;</span> <span class="token string">"  "</span> <span class="token operator">&lt;&lt;</span> <span class="token function">strlen</span><span class="token punctuation">(</span>password<span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"位"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+                <span class="token function">setLocalDate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>choice <span class="token operator">==</span> <span class="token string">'3'</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                cout <span class="token operator">&lt;&lt;</span> <span class="token string">"请选择"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"选择标签：1课内学习 2课外学习 3学校账户 4娱乐账户 5其它账户"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"其他选择跳过该步骤"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">char</span> choice<span class="token punctuation">;</span>
+            cin <span class="token operator">>></span> choice<span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>choice <span class="token operator">&lt;=</span> <span class="token string">'5'</span> <span class="token operator">&amp;&amp;</span> choice <span class="token operator">>=</span> <span class="token string">'1'</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                tag<span class="token punctuation">[</span>choice <span class="token operator">-</span> <span class="token string">'1'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"=====================账户==================="</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"用户名："</span> <span class="token operator">&lt;&lt;</span> username <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"密码："</span> <span class="token operator">&lt;&lt;</span> password <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"URL："</span> <span class="token operator">&lt;&lt;</span> url <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"日期："</span> <span class="token operator">&lt;&lt;</span> localDate <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"============================================"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">friend</span> ostream<span class="token operator">&amp;</span> <span class="token keyword">operator</span><span class="token operator">&lt;&lt;</span><span class="token punctuation">(</span>ostream<span class="token operator">&amp;</span> output<span class="token punctuation">,</span> Password cipher<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">friend</span> <span class="token keyword">bool</span> <span class="token keyword">operator</span><span class="token operator">==</span><span class="token punctuation">(</span>Password password1<span class="token punctuation">,</span> Password password2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//随机函数，这些函数都是为上面的函数服务，没必要看。</span>
+    <span class="token keyword">char</span> <span class="token function">random</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span> min<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">char</span> max<span class="token punctuation">)</span>
+    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">rand</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token punctuation">(</span>max <span class="token operator">-</span> min <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> min<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> <span class="token function">randomNum</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token string">'0'</span><span class="token punctuation">,</span> <span class="token string">'9'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> <span class="token function">randomUpperLetter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token number">65</span><span class="token punctuation">,</span> <span class="token number">90</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> <span class="token function">randomLowerLetter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token number">97</span><span class="token punctuation">,</span> <span class="token number">122</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> <span class="token function">randomSymbol</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token number">33</span><span class="token punctuation">,</span> <span class="token number">47</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> <span class="token function">randomKind</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">bool</span> flag<span class="token punctuation">)</span>
+    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>flag<span class="token punctuation">)</span><span class="token comment" spellcheck="true">//无符号</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">int</span> choice<span class="token punctuation">;</span>
+            choice <span class="token operator">=</span> <span class="token function">rand</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">3</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>choice <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span> <span class="token function">randomNum</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>choice <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span> <span class="token function">randomLowerLetter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span> <span class="token function">randomUpperLetter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">int</span> choice<span class="token punctuation">;</span>
+            choice <span class="token operator">=</span> <span class="token function">rand</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">4</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>choice <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span> <span class="token function">randomNum</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>choice <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span> <span class="token function">randomLowerLetter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>choice <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span> <span class="token function">randomUpperLetter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span> <span class="token function">randomSymbol</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//账户管理部分的菜单界面</span>
+<span class="token keyword">void</span> <span class="token function">passwordMenu</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//文件加密和解密函数</span>
+<span class="token keyword">void</span> <span class="token function">encryption</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>“password.cpp”</p>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"plan.h"</span></span>
+
+ostream<span class="token operator">&amp;</span> <span class="token keyword">operator</span><span class="token operator">&lt;&lt;</span><span class="token punctuation">(</span>ostream<span class="token operator">&amp;</span> output<span class="token punctuation">,</span> Plan plan<span class="token punctuation">)</span>
+<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    plan<span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> output<span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token keyword">bool</span> <span class="token keyword">operator</span><span class="token operator">==</span><span class="token punctuation">(</span>Plan plan1<span class="token punctuation">,</span> Plan plan2<span class="token punctuation">)</span>
+<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token function">strcmp</span><span class="token punctuation">(</span>plan1<span class="token punctuation">.</span>title<span class="token punctuation">,</span> plan2<span class="token punctuation">.</span>title<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token keyword">void</span> <span class="token function">planMenu</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    Plan plan<span class="token punctuation">;</span>
+    List<span class="token operator">&lt;</span>Plan<span class="token operator">></span> listOfPlan<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> <span class="token keyword">char</span><span class="token operator">*</span> planFileDat <span class="token operator">=</span> <span class="token string">"d:\\planFile.dat"</span><span class="token punctuation">;</span>
+    listOfPlan<span class="token punctuation">.</span><span class="token function">loadDatFile</span><span class="token punctuation">(</span>planFileDat<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token function">system</span><span class="token punctuation">(</span><span class="token string">"CLS"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">char</span> choice<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"=======计划======="</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"1.添加计划/待办"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"2.保存计划/待办"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"3.浏览所有计划/待办"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"4.导出计划记录本(未完成)"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"5.查找计划/待办"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"6.删除计划"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"7.修改计划"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Q.退出"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cin <span class="token operator">>></span> choice<span class="token punctuation">;</span>
+
+        <span class="token keyword">switch</span> <span class="token punctuation">(</span>choice<span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">case</span> <span class="token string">'1'</span><span class="token operator">:</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            plan<span class="token punctuation">.</span><span class="token function">setAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            listOfPlan<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>plan<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">system</span><span class="token punctuation">(</span><span class="token string">"pause"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">case</span> <span class="token string">'2'</span><span class="token operator">:</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            listOfPlan<span class="token punctuation">.</span><span class="token function">saveDatFile</span><span class="token punctuation">(</span>planFileDat<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"保存完成"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            <span class="token function">Sleep</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">system</span><span class="token punctuation">(</span><span class="token string">"pause"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">case</span> <span class="token string">'3'</span><span class="token operator">:</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">char</span> ans<span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"输入1，正序输出     输入2，倒序输出"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            cin <span class="token operator">>></span> ans<span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>ans <span class="token operator">==</span> <span class="token string">'1'</span><span class="token punctuation">)</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                listOfPlan<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                listOfPlan<span class="token punctuation">.</span><span class="token function">resPrint</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token function">system</span><span class="token punctuation">(</span><span class="token string">"pause"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">case</span> <span class="token string">'4'</span><span class="token operator">:</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+
+            <span class="token function">system</span><span class="token punctuation">(</span><span class="token string">"pause"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">case</span> <span class="token string">'5'</span><span class="token operator">:</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            plan<span class="token punctuation">.</span><span class="token function">setAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>listOfPlan<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>plan<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token keyword">nullptr</span><span class="token punctuation">)</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                cout <span class="token operator">&lt;&lt;</span> <span class="token string">"没有找到"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+                <span class="token function">Sleep</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> listOfPlan<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>plan<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span>content<span class="token punctuation">;</span>
+            <span class="token function">system</span><span class="token punctuation">(</span><span class="token string">"pause"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">case</span> <span class="token string">'6'</span><span class="token operator">:</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"1按序号删除计划   2按单词中英文删除"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            <span class="token keyword">char</span> choice<span class="token punctuation">;</span>
+            cin <span class="token operator">>></span> choice<span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>choice <span class="token operator">==</span> <span class="token string">'1'</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                cout <span class="token operator">&lt;&lt;</span> <span class="token string">"输入序号："</span><span class="token punctuation">;</span>
+                <span class="token keyword">int</span> i<span class="token punctuation">;</span>
+                cin <span class="token operator">>></span> i<span class="token punctuation">;</span>
+                listOfPlan<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>choice <span class="token operator">==</span> <span class="token string">'2'</span><span class="token punctuation">)</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                plan<span class="token punctuation">.</span><span class="token function">setAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                listOfPlan<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span>plan<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                cout <span class="token operator">&lt;&lt;</span> <span class="token string">"退出"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token function">system</span><span class="token punctuation">(</span><span class="token string">"pause"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">case</span> <span class="token string">'7'</span><span class="token operator">:</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"1按序号修改计划   2按单词中英文修改"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            <span class="token keyword">char</span> choice<span class="token punctuation">;</span>
+            cin <span class="token operator">>></span> choice<span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>choice <span class="token operator">==</span> <span class="token string">'1'</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                cout <span class="token operator">&lt;&lt;</span> <span class="token string">"输入序号："</span><span class="token punctuation">;</span>
+                <span class="token keyword">int</span> i<span class="token punctuation">;</span>
+                cin <span class="token operator">>></span> i<span class="token punctuation">;</span>
+                cout <span class="token operator">&lt;&lt;</span> <span class="token string">"请输入新的计划"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+                plan<span class="token punctuation">.</span><span class="token function">setAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                listOfPlan<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> plan<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>choice <span class="token operator">==</span> <span class="token string">'2'</span><span class="token punctuation">)</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                cout <span class="token operator">&lt;&lt;</span> <span class="token string">"请输入要修改的计划"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+                plan<span class="token punctuation">.</span><span class="token function">setAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                cout <span class="token operator">&lt;&lt;</span> <span class="token string">"请输入新的计划"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+                Plan newPlan<span class="token punctuation">;</span>
+                newPlan<span class="token punctuation">.</span><span class="token function">setAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                listOfPlan<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>plan<span class="token punctuation">,</span> newPlan<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                cout <span class="token operator">&lt;&lt;</span> <span class="token string">"退出"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+            <span class="token function">system</span><span class="token punctuation">(</span><span class="token string">"pause"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">case</span> <span class="token string">'q'</span><span class="token operator">:</span>
+        <span class="token keyword">case</span> <span class="token string">'Q'</span><span class="token operator">:</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//退出前调用结束模块</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">default</span><span class="token operator">:</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"请选择"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            <span class="token function">Sleep</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<p>Word类，这个类直接迁移自我以前写的程序，所以一些没用到的数据成员其实是懒得改了。功能上做了很多简化，大家有兴趣可以接着完善之类的。按理说声明和定义最好分开，不过因为分开写麻烦所以就没分了。。。。</p>
+<p>“word.h”</p>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">pragma</span> once</span>
+<span class="token macro property">#<span class="token directive keyword">ifndef</span> LengthOfWord</span>
+<span class="token macro property">#<span class="token directive keyword">define</span> LengthOfWord 30</span>
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+<span class="token macro property">#<span class="token directive keyword">ifndef</span> LengthOfTag</span>
+<span class="token macro property">#<span class="token directive keyword">define</span> LengthOfTag 5</span>
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"common.h"</span></span>
+
+<span class="token keyword">class</span> <span class="token class-name">Word</span>
+<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">char</span> english<span class="token punctuation">[</span>LengthOfWord<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> chinese<span class="token punctuation">[</span>LengthOfWord <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> isRemember<span class="token punctuation">;</span>                    <span class="token comment" spellcheck="true">/*0,1,2*/</span>
+    <span class="token keyword">int</span> tag<span class="token punctuation">[</span>LengthOfTag<span class="token punctuation">]</span><span class="token punctuation">;</span>            <span class="token comment" spellcheck="true">/*最多五个标签*/</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token comment" spellcheck="true">//show()是听写输出</span>
+    <span class="token keyword">void</span> <span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"英语："</span> <span class="token operator">&lt;&lt;</span> english <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token function">system</span><span class="token punctuation">(</span><span class="token string">"pause"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"汉语："</span> <span class="token operator">&lt;&lt;</span> chinese <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">setAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"请输入英语单词"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cin <span class="token operator">>></span> english<span class="token punctuation">;</span><span class="token comment" spellcheck="true">/*以后还要完善输入检查和限制读入字符数*/</span>
+
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"请输入汉语释义"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cin <span class="token operator">>></span> chinese<span class="token punctuation">;</span><span class="token comment" spellcheck="true">/*以后还要完善输入检查和限制读入字符数*/</span>
+
+        <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token function">system</span><span class="token punctuation">(</span><span class="token string">"CLS"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"选择单词标签"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"1.学习\t2.考试\t3日常"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"4.重要\t5.四六级\t6.选完了"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            <span class="token keyword">int</span> t <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            cin <span class="token operator">>></span> t<span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>t <span class="token operator">>=</span> <span class="token number">1</span> <span class="token operator">&amp;&amp;</span> t <span class="token operator">&lt;=</span> <span class="token number">5</span><span class="token punctuation">)</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                tag<span class="token punctuation">[</span>t <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">/*以后改成bool[5]会更好,用非来实现重复选取消*/</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>t <span class="token operator">==</span> <span class="token number">6</span><span class="token punctuation">)</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"设置完成"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token function">Sleep</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">system</span><span class="token punctuation">(</span><span class="token string">"CLS"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//友元函数</span>
+    <span class="token keyword">friend</span> istream<span class="token operator">&amp;</span> <span class="token keyword">operator</span><span class="token operator">>></span><span class="token punctuation">(</span>istream<span class="token operator">&amp;</span> input<span class="token punctuation">,</span> Word<span class="token operator">&amp;</span> word<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">friend</span> ostream<span class="token operator">&amp;</span> <span class="token keyword">operator</span><span class="token operator">&lt;&lt;</span><span class="token punctuation">(</span>ostream<span class="token operator">&amp;</span> output<span class="token punctuation">,</span> Word<span class="token operator">&amp;</span> word<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//非听写输出</span>
+    <span class="token keyword">friend</span> <span class="token keyword">bool</span> <span class="token keyword">operator</span><span class="token operator">==</span><span class="token punctuation">(</span>Word word1<span class="token punctuation">,</span> Word word2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+istream<span class="token operator">&amp;</span> <span class="token keyword">operator</span><span class="token operator">>></span><span class="token punctuation">(</span>istream<span class="token operator">&amp;</span> input<span class="token punctuation">,</span> Word<span class="token operator">&amp;</span> word<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ostream<span class="token operator">&amp;</span> <span class="token keyword">operator</span><span class="token operator">&lt;&lt;</span><span class="token punctuation">(</span>ostream<span class="token operator">&amp;</span> output<span class="token punctuation">,</span> Word<span class="token operator">&amp;</span> word<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">bool</span> <span class="token keyword">operator</span><span class="token operator">==</span><span class="token punctuation">(</span>Word word1<span class="token punctuation">,</span> Word word2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">wordMenu</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>“word.cpp”</p>
+<pre><code>#include &quot;word.h&quot;
+
+istream&amp; operator&gt;&gt;(istream&amp; input, Word&amp; word)
+&#123;
+    word.setAll();
+    return input;
+&#125;
+//非听写输出 -OK 
+ostream&amp; operator&lt;&lt;(ostream&amp; output, Word&amp; word)
+&#123;
+    output &lt;&lt; &quot;英语：&quot; &lt;&lt; word.english &lt;&lt; endl;
+    output &lt;&lt; &quot;汉语：&quot; &lt;&lt; word.chinese &lt;&lt; endl;
+    return output;
+&#125;
+bool operator==(Word word1, Word word2)
+&#123;
+    return (strcmp(word1.english,word2.english)==0)||(strcmp(word1.chinese, word2.chinese) == 0);
+&#125;
+void wordMenu() &#123;
+    Word word;
+    List&lt;Word&gt; listOfWord;
+    const char* wordFileDat = &quot;d:\\wordFile.dat&quot;;
+    listOfWord.loadDatFile(wordFileDat);
+    while (1)
+    &#123;
+        system(&quot;CLS&quot;);
+        char choice;
+        cout &lt;&lt; &quot;=======单词学习=======&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;1.添加单词&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;2.保存单词表&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;3.浏览所有单词&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;4.导出单词本(未完成)&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;5.查找单词&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;6.删除单词&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;7.修改单词&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;Q.退出&quot; &lt;&lt; endl;
+        cin &gt;&gt; choice;
+
+        switch (choice)
+        &#123;
+        case &#39;1&#39;:
+        &#123;
+            cout &lt;&lt; &quot;默认密码长度为20&quot; &lt;&lt; endl;
+            word.setAll();
+            listOfWord.append(word);
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;2&#39;:
+        &#123;
+            listOfWord.saveDatFile(wordFileDat);
+            cout &lt;&lt; &quot;保存完成&quot; &lt;&lt; endl;
+            Sleep(500);
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;3&#39;:
+        &#123;
+            char ans;
+            cout &lt;&lt; &quot;输入1，正序输出     输入2，倒序输出&quot; &lt;&lt; endl;
+            cin &gt;&gt; ans;
+            if (ans == &#39;1&#39;)
+            &#123;
+                listOfWord.print();
+            &#125;
+            else &#123;
+                listOfWord.resPrint();
+            &#125;
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;4&#39;:
+        &#123;
+
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;5&#39;:
+        &#123;
+            word.setAll();
+            if (listOfWord.find(word) == nullptr)
+            &#123;
+                cout &lt;&lt; &quot;没有找到&quot; &lt;&lt; endl;
+                Sleep(300);
+                break;
+            &#125;
+            cout &lt;&lt; listOfWord.find(word)-&gt;content;
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;6&#39;:
+        &#123;
+            cout &lt;&lt; &quot;1按序号删除单词   2按单词中英文删除&quot; &lt;&lt; endl;
+            char choice;
+            cin &gt;&gt; choice;
+            if (choice == &#39;1&#39;) &#123;
+                cout &lt;&lt; &quot;输入序号：&quot;;
+                int i;
+                cin &gt;&gt; i;
+                listOfWord.remove(i);
+            &#125;
+            else if (choice == &#39;2&#39;)
+            &#123;
+                word.setAll();
+                listOfWord.remove(word);
+            &#125;
+            else
+            &#123;
+                cout &lt;&lt; &quot;退出&quot; &lt;&lt; endl;
+            &#125;
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;7&#39;:
+        &#123;
+            cout &lt;&lt; &quot;1按序号修改单词   2按单词中英文修改&quot; &lt;&lt; endl;
+            char choice;
+            cin &gt;&gt; choice;
+            if (choice == &#39;1&#39;) &#123;
+                cout &lt;&lt; &quot;输入序号：&quot;;
+                int i;
+                cin &gt;&gt; i;
+                cout &lt;&lt; &quot;请输入新的单词&quot; &lt;&lt; endl;
+                word.setAll();
+                listOfWord.replace(i,word);
+            &#125;
+            else if (choice == &#39;2&#39;)
+            &#123;
+                cout &lt;&lt; &quot;请输入要修改的单词&quot; &lt;&lt; endl;
+                word.setAll();
+                cout &lt;&lt; &quot;请输入新的单词&quot; &lt;&lt; endl;
+                Word newWord;
+                newWord.setAll();
+                listOfWord.replace(word, newWord);
+            &#125;
+            else
+            &#123;
+                cout &lt;&lt; &quot;退出&quot; &lt;&lt; endl;
+            &#125;
+
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;q&#39;:
+        case &#39;Q&#39;:
+        &#123;
+            return;
+        &#125;
+        default:
+        &#123;
+            cout &lt;&lt; &quot;请选择&quot; &lt;&lt; endl;
+            Sleep(500);
+        &#125;
+        &#125;
+    &#125;
+&#125;</code></pre>
+<p>最后就是Plan类了</p>
+<p>“plan.h”</p>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">pragma</span> once</span>
+<span class="token macro property">#<span class="token directive keyword">pragma</span> warning(disable:4996)</span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"common.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;time.h></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;cstdlib></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;ctime></span></span>
+
+<span class="token keyword">class</span> <span class="token class-name">Plan</span>
+<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">char</span> title<span class="token punctuation">[</span><span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> description<span class="token punctuation">[</span><span class="token number">300</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">bool</span> isImportant<span class="token punctuation">;</span>
+    <span class="token keyword">bool</span> isEmergency<span class="token punctuation">;</span>
+    <span class="token keyword">char</span> deadline<span class="token punctuation">[</span><span class="token number">30</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> startDate<span class="token punctuation">[</span><span class="token number">30</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">void</span> <span class="token function">setTitle</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"输入计划/待办标题："</span><span class="token punctuation">;</span>
+        cin <span class="token operator">>></span> title<span class="token punctuation">;</span>
+        cout<span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">setDescription</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"简述计划/待办事项：（没有空格,换行用\\代替）"</span><span class="token punctuation">;</span>
+        cin <span class="token operator">>></span> title<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">setTag</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">char</span> choice<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"是否重要？（Y/N）"</span><span class="token punctuation">;</span>
+        cin <span class="token operator">>></span> choice<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>choice <span class="token operator">==</span> <span class="token string">'y'</span> <span class="token operator">||</span> choice <span class="token operator">==</span> <span class="token string">'Y'</span><span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            isImportant <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            isImportant <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"是否紧急？（Y/N）"</span><span class="token punctuation">;</span>
+        cin <span class="token operator">>></span> choice<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>choice <span class="token operator">==</span> <span class="token string">'y'</span> <span class="token operator">||</span> choice <span class="token operator">==</span> <span class="token string">'Y'</span><span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            isEmergency <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            isEmergency <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">setStartDate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        time_t now <span class="token operator">=</span> <span class="token function">time</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment" spellcheck="true">//当前系统的当前日期/时间</span>
+        <span class="token keyword">char</span><span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token function">ctime</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>now<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//把 now 转换为字符串形式ctime(&amp;now);</span>
+        <span class="token function">strcpy</span><span class="token punctuation">(</span>startDate<span class="token punctuation">,</span> temp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">setDeadline</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"输入截止日期："</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cin <span class="token operator">>></span> deadline<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">setAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token function">setTitle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">setDescription</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">setTag</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">setStartDate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">setDeadline</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">void</span> <span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"=====================计划==================="</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"    标题："</span> <span class="token operator">&lt;&lt;</span>title <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"    简述："</span> <span class="token operator">&lt;&lt;</span> description <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"    性质："</span><span class="token punctuation">;</span> 
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>isImportant<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"重要\t"</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"不重要\t"</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>isEmergency<span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"紧急\n"</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"不紧急\n"</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"    开始时间："</span> <span class="token operator">&lt;&lt;</span> startDate <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"    截止时间："</span> <span class="token operator">&lt;&lt;</span> deadline <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"============================================"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">friend</span> ostream<span class="token operator">&amp;</span> <span class="token keyword">operator</span><span class="token operator">&lt;&lt;</span><span class="token punctuation">(</span>ostream<span class="token operator">&amp;</span> output<span class="token punctuation">,</span> Plan plan<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">friend</span> <span class="token keyword">bool</span> <span class="token keyword">operator</span><span class="token operator">==</span><span class="token punctuation">(</span>Plan plan1<span class="token punctuation">,</span>Plan plan2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+ostream<span class="token operator">&amp;</span> <span class="token keyword">operator</span><span class="token operator">&lt;&lt;</span><span class="token punctuation">(</span>ostream<span class="token operator">&amp;</span> output<span class="token punctuation">,</span> Plan plan<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">bool</span> <span class="token keyword">operator</span><span class="token operator">==</span><span class="token punctuation">(</span>Plan plan1<span class="token punctuation">,</span> Plan plan2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">void</span> <span class="token function">planMenu</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>“plan.cpp”</p>
+<pre><code>#include &quot;plan.h&quot;
+
+ostream&amp; operator&lt;&lt;(ostream&amp; output, Plan plan)
+&#123;
+    plan.show();
+    return output;
+&#125;
+bool operator==(Plan plan1, Plan plan2)
+&#123;
+    return strcmp(plan1.title, plan2.title) == 0;
+&#125;
+void planMenu()
+&#123;
+    Plan plan;
+    List&lt;Plan&gt; listOfPlan;
+    const char* planFileDat = &quot;d:\\planFile.dat&quot;;
+    listOfPlan.loadDatFile(planFileDat);
+    while (1)
+    &#123;
+        system(&quot;CLS&quot;);
+        char choice;
+        cout &lt;&lt; &quot;=======计划=======&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;1.添加计划/待办&quot; &lt;&lt; endl;//
+        cout &lt;&lt; &quot;2.保存计划/待办&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;3.浏览所有计划/待办&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;4.导出计划记录本(未完成)&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;5.查找计划/待办&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;6.删除计划&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;7.修改计划&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;Q.退出&quot; &lt;&lt; endl;
+        cin &gt;&gt; choice;
+
+        switch (choice)
+        &#123;
+        case &#39;1&#39;:
+        &#123;
+            plan.setAll();
+            listOfPlan.append(plan);
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;2&#39;:
+        &#123;
+            listOfPlan.saveDatFile(planFileDat);
+            cout &lt;&lt; &quot;保存完成&quot; &lt;&lt; endl;
+            Sleep(500);
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;3&#39;:
+        &#123;
+            char ans;
+            cout &lt;&lt; &quot;输入1，正序输出     输入2，倒序输出&quot; &lt;&lt; endl;
+            cin &gt;&gt; ans;
+            if (ans == &#39;1&#39;)
+            &#123;
+                listOfPlan.print();
+            &#125;
+            else &#123;
+                listOfPlan.resPrint();
+            &#125;
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;4&#39;:
+        &#123;
+
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;5&#39;:
+        &#123;
+            plan.setAll();
+            if (listOfPlan.find(plan) == nullptr)
+            &#123;
+                cout &lt;&lt; &quot;没有找到&quot; &lt;&lt; endl;
+                Sleep(300);
+                break;
+            &#125;
+            cout &lt;&lt; listOfPlan.find(plan)-&gt;content;
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;6&#39;:
+        &#123;
+            cout &lt;&lt; &quot;1按序号删除计划   2按单词中英文删除&quot; &lt;&lt; endl;
+            char choice;
+            cin &gt;&gt; choice;
+            if (choice == &#39;1&#39;) &#123;
+                cout &lt;&lt; &quot;输入序号：&quot;;
+                int i;
+                cin &gt;&gt; i;
+                listOfPlan.remove(i);
+            &#125;
+            else if (choice == &#39;2&#39;)
+            &#123;
+                plan.setAll();
+                listOfPlan.remove(plan);
+            &#125;
+            else
+            &#123;
+                cout &lt;&lt; &quot;退出&quot; &lt;&lt; endl;
+            &#125;
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;7&#39;:
+        &#123;
+            cout &lt;&lt; &quot;1按序号修改计划   2按单词中英文修改&quot; &lt;&lt; endl;
+            char choice;
+            cin &gt;&gt; choice;
+            if (choice == &#39;1&#39;) &#123;
+                cout &lt;&lt; &quot;输入序号：&quot;;
+                int i;
+                cin &gt;&gt; i;
+                cout &lt;&lt; &quot;请输入新的计划&quot; &lt;&lt; endl;
+                plan.setAll();
+                listOfPlan.replace(i, plan);
+            &#125;
+            else if (choice == &#39;2&#39;)
+            &#123;
+                cout &lt;&lt; &quot;请输入要修改的计划&quot; &lt;&lt; endl;
+                plan.setAll();
+                cout &lt;&lt; &quot;请输入新的计划&quot; &lt;&lt; endl;
+                Plan newPlan;
+                newPlan.setAll();
+                listOfPlan.replace(plan, newPlan);
+            &#125;
+            else
+            &#123;
+                cout &lt;&lt; &quot;退出&quot; &lt;&lt; endl;
+            &#125;
+
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;q&#39;:
+        case &#39;Q&#39;:
+        &#123;
+            return;//退出前调用结束模块
+        &#125;
+        default:
+        &#123;
+            cout &lt;&lt; &quot;请选择&quot; &lt;&lt; endl;
+            Sleep(500);
+        &#125;
+        &#125;
+    &#125;
+&#125;</code></pre>
+<p>其实写Plan类时没有测试，不过我觉着应该没问题，大概，吧。。。。</p>
+<p>至此三个上层建筑就已经搭建完了，因为有链表类模板，再进行扩展也是很轻松的事情。</p>
+<p>但这三个类只能实现前三个功能，之后三个功能将在另一部分讲。</p>
+<h2 id="第四步-对上层建筑做个总结的类（语文不好见谅）"><a href="#第四步-对上层建筑做个总结的类（语文不好见谅）" class="headerlink" title="第四步 对上层建筑做个总结的类（语文不好见谅）"></a>第四步 对上层建筑做个总结的类（语文不好见谅）</h2><p>“user.h”</p>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">pragma</span> once</span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"common.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"plan.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"word.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"password.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"go.h"</span></span>
+
+<span class="token keyword">class</span> <span class="token class-name">User</span>
+<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">char</span> username<span class="token punctuation">[</span><span class="token number">30</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> password<span class="token punctuation">[</span><span class="token number">30</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token function">User</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">bool</span> <span class="token function">isUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">mainMenu</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">welcome</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">goodbye</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span></code></pre>
+<p>“user.cpp”</p>
+<pre><code>#include &quot;user.h&quot;
+//#include &lt;string.h&gt;
+User::User()
+&#123;
+    strcpy(username, &quot;XXX&quot;);
+    strcpy(password, &quot;1234567890&quot;);
+&#125;
+bool User::isUser() &#123;
+    cout &lt;&lt; &quot;请输入用户名和密码&quot; &lt;&lt; endl;
+    cout &lt;&lt; &quot;用户名：&quot;;
+    char input[30];
+    cin &gt;&gt; input;
+    if (strcmp(input, username) == 0) &#123;
+        cout &lt;&lt; &quot;密码：&quot;;
+        cin &gt;&gt; input;
+        if (strcmp(input, password) == 0)
+        &#123;
+            return true;
+        &#125;
+        else &#123;
+            cout &lt;&lt; &quot;密码错误&quot; &lt;&lt; endl;
+            system(&quot;pause&quot;);
+        &#125;
+    &#125;
+    else &#123;
+        cout &lt;&lt; &quot;用户名错误&quot; &lt;&lt; endl;
+        system(&quot;pause&quot;);
+    &#125;
+    return false;
+&#125;
+void User::mainMenu() &#123;
+    while (1)
+    &#123;
+        system(&quot;CLS&quot;);
+        char choice;
+        cout &lt;&lt; &quot;========桌面助手========&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;    1.密码管理&quot; &lt;&lt; endl;//
+        cout &lt;&lt; &quot;    2.计划待办&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;    3.英语单词&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;    4.方圆围棋&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;    5.3D坦克战&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;    6.聊天客户端&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;    7.聊天服务端&quot; &lt;&lt; endl;
+        cout &lt;&lt; &quot;    Q.退出程序&quot; &lt;&lt; endl;
+        cin &gt;&gt; choice;
+
+        switch (choice)
+        &#123;
+        case &#39;1&#39;:
+        &#123;
+            system(&quot;CLS&quot;);
+            passwordMenu();
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;2&#39;:
+        &#123;
+            system(&quot;CLS&quot;);
+            planMenu();
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;3&#39;:
+        &#123;
+            system(&quot;CLS&quot;);
+            wordMenu();
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;4&#39;:
+        &#123;
+            system(&quot;CLS&quot;);
+            Go();
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;5&#39;:
+        &#123;
+            system(&quot;CLS&quot;);
+            system(&quot;start C:\\Users\\Thinkpad\\Desktop\\课外学习\\自制3D坦克大战游戏\\myTankGame.exe&quot;);
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;6&#39;:
+        &#123;
+            system(&quot;CLS&quot;);
+            system(&quot;start C:\\Users\\Thinkpad\\source\\repos\\SecurityChat\\Debug\\client.exe&quot;);
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;7&#39;:
+        &#123;
+            system(&quot;CLS&quot;);
+            system(&quot;start C:\\Users\\Thinkpad\\source\\repos\\SecurityChat\\Debug\\server.exe&quot;);
+            system(&quot;pause&quot;);
+            break;
+        &#125;
+        case &#39;q&#39;:
+        case &#39;Q&#39;:
+        &#123;
+            return;
+        &#125;
+        default:
+        &#123;
+            cout &lt;&lt; &quot;请选择&quot; &lt;&lt; endl;
+            Sleep(500);
+        &#125;
+        &#125;
+    &#125;
+&#125;
+void User::welcome() &#123;
+    cout &lt;&lt; &quot;欢迎大王回来&quot; &lt;&lt; endl;
+    //此处可以添加函数来设置控制台样子，字体样式等等
+    system(&quot;pause&quot;);
+    mainMenu();
+&#125;
+void User::goodbye() &#123;
+    cout &lt;&lt; &quot;唉，真无奈，今天我竟然还是如此的聪明，帅气，天下无敌。&quot; &lt;&lt; endl;
+    cout &lt;&lt; &quot;Goodbye&quot; &lt;&lt; endl;
+    system(&quot;pause&quot;);
+&#125;</code></pre>
+<p>做完了这个类，我们就只需要用一个User类就够了，接下来就是main()函数了</p>
+<h2 id="第五步-main-cpp"><a href="#第五步-main-cpp" class="headerlink" title="第五步 main.cpp"></a>第五步 main.cpp</h2><pre class=" language-cpp"><code class="language-cpp"><span class="token comment" spellcheck="true">//命名：驼峰式</span>
+<span class="token comment" spellcheck="true">//类名大写字母开头</span>
+<span class="token comment" spellcheck="true">//函数和成员都是小写字母开头</span>
+<span class="token comment" spellcheck="true">//bool命名一定是is....</span>
+<span class="token comment" spellcheck="true">//文件名全小写</span>
+
+<span class="token macro property">#<span class="token directive keyword">pragma</span> warning(disable:4996)</span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"user.h"</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    User user<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>user<span class="token punctuation">.</span><span class="token function">isUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        user<span class="token punctuation">.</span><span class="token function">welcome</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        user<span class="token punctuation">.</span><span class="token function">goodbye</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<p>补充一下，之前代码中看到的“common.h”</p>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">pragma</span> once</span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;Windows.h></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"list.h"</span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span></code></pre>
+<p>用处就是把很多文件共有的东西提出来放一起，这样只用写一份就够了</p>
+<p>用的IDE是Visual Studio 2019，编译完成后没有错误和警告，简单的测试也没问题。不过没有特别细致的测试，说不定会有什么严重的BUG。</p>
+<h2 id="第六步-聊天室的开发"><a href="#第六步-聊天室的开发" class="headerlink" title="第六步 聊天室的开发"></a>第六步 聊天室的开发</h2><p>我用的方法是B站搜索聊天室，然后会有很多教程，跟着做一做就OK了，看不懂再换一个，网上资源很丰富。其实一开始的目标是用自己的加密算法加密聊天信息，并且实现外网的聊天。但是因为要准备考试，还有N多作业要做，精力不够就没做下去。。。。</p>
+<p>此外这里比较令我惊奇的是改一下头文件的先后顺序就会出现很多错误，我对这个事情还做了几次实验，但也没弄明白怎么回事，总之非常玄学。</p>
+<h2 id="第七步-3D坦克大战的开发"><a href="#第七步-3D坦克大战的开发" class="headerlink" title="第七步 3D坦克大战的开发"></a>第七步 3D坦克大战的开发</h2><p>首先要下一个unity, 了解一下C#，接着B站搜索相关教程。（PS，官网上有这个3D坦克大战的教程，而且提供模型和声音，动画资源）。剩下的就是折腾了。生命在于折腾。如何折腾比较靠谱请参阅官方教程以及B站的N多教程。</p>
+<h2 id="第八步-方圆围棋"><a href="#第八步-方圆围棋" class="headerlink" title="第八步 方圆围棋"></a>第八步 方圆围棋</h2><p>这块也是直接迁移以前的程序。当时是初学，对GUI有执念，找到了easyX和网上的教程做的。网上资源很丰富，如果GUI不能满足你，我推荐用UE4做个3D效果的围棋程序。在B站上有人发过UE4做的3D效果的围棋，可以搜到，可以在那里学习。</p>
+<p>虽然说是围棋，其实只弄了个壳子，并没有实现提子，数气，判断胜负。一些函数也没有写好，围棋这部分也是直接从以前写的程序里搬过来的，参考的B站上的教程，所以B站真是个学习网站，好东西不少。注意，这部分要求在目录里有一张名字为“1.jpg”的背景图片，大家可以按照自己的爱好画一画。此外在选择方圆围棋功能后会导致控制台被关闭，其实也有方法解决这个问题，大家可以百度一下如何解决，这里就不解决了，因为我也累了。另外这里用到了easyX（就是“&lt;graphics.h&gt;”），不知道easyX或者没有的可以百度一下下载一个，过程很简单，我就不细说了。</p>
+<p>“go.h”</p>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">pragma</span> once</span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;cmath></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;windows.h></span></span>
+
+<span class="token macro property">#<span class="token directive keyword">pragma</span> comment (lib,"winmm.lib")</span>
+
+<span class="token keyword">int</span> <span class="token function">Go</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">void</span> <span class="token function">Exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">void</span> <span class="token function">initGo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//初始化</span>
+<span class="token keyword">void</span> <span class="token function">playGo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//运行游戏</span>
+<span class="token keyword">void</span> <span class="token function">death</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//检查棋子的死活</span></code></pre>
+<p>“go.cpp”</p>
+<pre><code>#include &quot;go.h&quot;
+#include &lt;graphics.h&gt;
+using namespace std;
+IMAGE img;
+int board[20][20] = &#123; 0 &#125;;//0没有棋子
+int Go()
+&#123;
+    initGo();
+    playGo();
+    return 0;
+&#125;
+
+void initGo()
+&#123;
+    //创建一个窗口
+    initgraph(1132, 597);
+    loadimage(NULL, L&quot;1.jpg&quot;);
+    setlinecolor(BLACK);
+    for (int i = 0; i &lt; 20; i++)
+    &#123;
+        line(0, i * 25, 500, i * 25);
+        line(i * 25, 0, i * 25, 500);
+    &#125;
+
+    //画一条粗的边框线
+    //法一：设置宽度
+    setlinestyle(PS_SOLID, 3);
+    line(500, 0, 500, 500);
+    line(0, 500, 500, 500);
+
+    //输出说明介绍
+    outtextxy(510, 80, L&quot;Player 1: 黑棋&quot;);
+    outtextxy(510, 120, L&quot;Player 2: 白棋&quot;);
+    outtextxy(510, 200, L&quot;退出游戏&quot;);
+
+
+&#125;
+void playGo()
+&#123;
+    //鼠标
+    MOUSEMSG m;//保存鼠标消息
+    int x = 0, y = 0, a = 0, b = 0;
+    int count = 0;
+
+
+    while (1)
+    &#123;
+        m = GetMouseMsg();//获取鼠标消息
+
+        for (int i = 1; i &lt; 20; i++)
+        &#123;
+            for (int j = 1; j &lt; 20; j++)
+            &#123;
+                if (abs(m.x - i * 25) &lt; 12 &amp;&amp; abs(m.y - j * 25) &lt; 12)
+                &#123;
+                    x = i * 25;
+                    y = j * 25;
+                    a = i;
+                    b = j;
+                &#125;
+            &#125;
+        &#125;
+        //鼠标左键按下
+        if (m.uMsg == WM_LBUTTONDOWN &amp;&amp; m.x / 25 * 25 &lt;= 500 &amp;&amp; m.y / 25 * 25 &lt;= 500)
+        &#123;
+            if (board[a][b] != 0)
+            &#123;
+                MessageBox(NULL, L&quot;这里已经有棋子了&quot;, L&quot;提示&quot;, MB_OK);
+                continue;
+            &#125;
+            if (count % 2 == 0)
+            &#123;
+                setfillcolor(BLACK);
+                solidcircle(x, y, 10);
+                board[a][b] = 1;
+            &#125;
+            else
+            &#123;
+                setfillcolor(WHITE);
+                solidcircle(x, y, 10);
+                board[a][b] = -1;
+            &#125;
+            count++;
+        &#125;
+        outtextxy(510, 250, L&quot;一次循环&quot;);
+        if (m.uMsg == WM_LBUTTONDOWN &amp;&amp; abs(m.x - 510) &lt; 20 &amp;&amp; abs(m.y - 200) &lt; 20)
+        &#123;
+            outtextxy(510, 250, L&quot;点击到了&quot;);
+            break;
+        &#125;
+    &#125;
+    return;
+&#125;</code></pre>
+<p>到这里程序就结束了，还不满足的可以尝试制作二维码程序，实现扫码，和生成二维码。这个在github上有很多教程和范例可以参考，还有学长在github上放出来二维码的项目，为学弟学妹们扫清道路。B站up回形针的视频也有对二维码的简单介绍。教程多数用Qt的。</p>
+<h2 id="二-文件结构"><a href="#二-文件结构" class="headerlink" title="二  文件结构"></a>二  文件结构</h2><p>估计这么长，大家应该是直接不看了或者直接翻到底吧。</p>
+<p><img src="https://pic2.zhimg.com/v2-0ba02b67871c6574caf6d5523af2da35_b.gif" alt="img"></p>
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">董一龙</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://dyldw.github.io/2020/10/02/c-da-zuo-ye/">https://dyldw.github.io/2020/10/02/c-da-zuo-ye/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">董一龙</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C++</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%A4%A7%E4%B8%80/">
+                                    <span class="chip bg-color">大一</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+        <div class="disqus-card card" data-aos="fade-up">
+    <div id="disqus_thread" class="card-content">
+        <noscript>Please enable JavaScript to view the
+            <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+    </div>
+</div>
+
+<script type="text/javascript">
+    disqus_config = function () {
+        this.page.url = 'https://dyldw.github.io/2020/10/02/c-da-zuo-ye/';
+        this.page.identifier = '/2020/10/02/c-da-zuo-ye/';
+        this.page.title = 'C++大作业--XXX管理程序';
+    };
+    let disqus_shortname = '评论';
+
+    (function () { // DON'T EDIT BELOW THIS LINE
+        let d = document, s = d.createElement('script');
+        // 如：s.src = 'https://blinkfox.disqus.com/embed.js';
+        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/10/02/c-da-zuo-ye/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="C++大作业--XXX管理程序">
+                        
+                        <span class="card-title">C++大作业--XXX管理程序</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            理工科大一往往会学习C/C++，期末会有大作业。这篇文章就是一个简单的C++大作业程序。我也是大一，所以觉着哪里写得不好欢迎在评论区提出。程序总体上讲是个“总分总”结构。
+一  实现这个程序要八步。第一步 程序的功能设计程序的目标有两个。一
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            董一龙
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%A4%A7%E4%B8%80/">
+                        <span class="chip bg-color">大一</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/10/02/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            董一龙
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: dyldw的博客<br />'
+            + '文章作者: 董一龙<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">董一龙</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">7.6k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/dyldw" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:dyl20001223@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1917626630" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1917626630" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="https://www.zhihu.com/people/shu-xing-tu-77" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/shu-xing-tu-77" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a>
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+
+</html>
