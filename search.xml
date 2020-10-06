@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>计算机体系结构</title>
+      <link href="2020/10/04/ji-suan-ji-ti-xi-jie-gou/"/>
+      <url>2020/10/04/ji-suan-ji-ti-xi-jie-gou/</url>
+      
+        <content type="html"><![CDATA[<h1 id="计算体系结构–存储系统"><a href="#计算体系结构–存储系统" class="headerlink" title="计算体系结构–存储系统"></a>计算体系结构–存储系统</h1><h2 id="1-存储体系概述"><a href="#1-存储体系概述" class="headerlink" title="1.存储体系概述"></a>1.存储体系概述</h2><h3 id="1-1存储器分类"><a href="#1-1存储器分类" class="headerlink" title="1.1存储器分类"></a>1.1存储器分类</h3><h4 id="主存"><a href="#主存" class="headerlink" title="主存"></a>主存</h4><p>地位：<strong>在现代计算机中，主存储器处于全机的中心地位。</strong></p><p>分类：</p><pre><code>- RAM</code></pre><ul><li>ROM<pre><code>- MROM   - PROM- EPROM- EEPROM</code></pre><ul><li>Flash memory 必须以块片页的方式擦写，写入速度比EEPROM高三个数量级以上</li></ul></li></ul><p><img src="%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84.assets/image-20201004223533373.png" alt="image-20201004223533373"></p><h3 id="1-2储存器性能指标"><a href="#1-2储存器性能指标" class="headerlink" title="1.2储存器性能指标"></a>1.2储存器性能指标</h3><h4 id="储存容量"><a href="#储存容量" class="headerlink" title="储存容量"></a>储存容量</h4><p>二进制位（bit）是构成存储器的最小单位</p><p><strong>字节（**</strong>byte**<strong>）是数据存储的**</strong>基本单位**</p><p><img src="%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84.assets/image-20201004223831841.png" alt="image-20201004223831841"></p><h4 id="储存速度"><a href="#储存速度" class="headerlink" title="储存速度"></a>储存速度</h4><p>存取时间</p><p><strong>指启动一次存储器操作到完成该操作所需的全部时间</strong></p><p>存储周期</p><p><strong>指存储器进行连续两次独立的存储器操作所需的最小间隔时间</strong></p><p><strong>通常存储周期大于存取时间</strong></p><p>存储器带宽</p><p><strong>是单位时间里存储器所能存取的最大信息量，存储器带宽的计量单位通常是位**</strong>/秒（bps）或字节/秒**</p><h3 id="1-3存储器层次结构"><a href="#1-3存储器层次结构" class="headerlink" title="1.3存储器层次结构"></a>1.3存储器层次结构</h3><h2 id="2-主储存器"><a href="#2-主储存器" class="headerlink" title="2.主储存器"></a>2.主储存器</h2><h3 id="2-1主储存器与CPU的连接"><a href="#2-1主储存器与CPU的连接" class="headerlink" title="2.1主储存器与CPU的连接"></a>2.1主储存器与CPU的连接</h3><p><img src="%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84.assets/image-20201004224910485.png" alt="image-20201004224910485"></p><p>分类 RAM，ROM，高性能的主存储器</p><p><img src="%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84.assets/image-20201004225141220.png" alt="image-20201004225141220"></p><h4 id="静态存储器SRAM"><a href="#静态存储器SRAM" class="headerlink" title="静态存储器SRAM"></a>静态存储器SRAM</h4><h5 id="1-SRAM存储位元"><a href="#1-SRAM存储位元" class="headerlink" title="(1)SRAM存储位元"></a>(1)SRAM存储位元</h5><h5 id="2-SRAM存储器"><a href="#2-SRAM存储器" class="headerlink" title="(2)SRAM存储器"></a>(2)SRAM存储器</h5><p>地址译码方式</p><p>一维地址译码方向</p><img src="计算机体系结构.assets/image-20201004233505018.png" alt="image-20201004233505018" style="zoom:80%;" /><p>双向译码方式</p><img src="计算机体系结构.assets/image-20201004233709071.png" alt="image-20201004233709071" style="zoom:80%;" /><p><img src="%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84.assets/image-20201004233855805.png" alt="image-20201004233855805"></p><p>A 地址总线    D或I/O 数据总线    CS chip select 片选线        WE write enable 写使能 </p><h5 id="3-SRAM存储器的特点"><a href="#3-SRAM存储器的特点" class="headerlink" title="(3)SRAM存储器的特点"></a>(3)SRAM存储器的特点</h5><p><strong>电源不掉电**</strong>的情况下，信息稳定保持（静态）**</p><p>存取速度快，集成度低（容量小），价格高。</p><p><strong>常用作高速缓冲存储器</strong></p><h4 id="动态存储器DRAM"><a href="#动态存储器DRAM" class="headerlink" title="动态存储器DRAM"></a>动态存储器DRAM</h4><h5 id="DRAM存储位元"><a href="#DRAM存储位元" class="headerlink" title="DRAM存储位元"></a>DRAM存储位元</h5><h5 id="DRAM存储器"><a href="#DRAM存储器" class="headerlink" title="DRAM存储器"></a>DRAM存储器</h5><h5 id="DRAM刷新方式"><a href="#DRAM刷新方式" class="headerlink" title="DRAM刷新方式"></a>DRAM刷新方式</h5><p>异步式刷新</p><h5 id="DRAM存储器特点"><a href="#DRAM存储器特点" class="headerlink" title="DRAM存储器特点"></a>DRAM存储器特点</h5><img src="计算机体系结构.assets/image-20201005074511533.png" alt="image-20201005074511533" style="zoom:50%;" /><p>常作为内存条</p><h4 id="SRAM与DRAM的比较"><a href="#SRAM与DRAM的比较" class="headerlink" title="SRAM与DRAM的比较"></a>SRAM与DRAM的比较</h4><p><img src="%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84.assets/image-20201005074656805.png" alt="image-20201005074656805"></p><h3 id="2-2高速存储器"><a href="#2-2高速存储器" class="headerlink" title="2.2高速存储器"></a>2.2高速存储器</h3><h3 id="2-3高速缓存存储器"><a href="#2-3高速缓存存储器" class="headerlink" title="2.3高速缓存存储器"></a>2.3高速缓存存储器</h3><h3 id="2-4虚拟存储器"><a href="#2-4虚拟存储器" class="headerlink" title="2.4虚拟存储器"></a>2.4虚拟存储器</h3><h3 id="2-5外存储器"><a href="#2-5外存储器" class="headerlink" title="2.5外存储器"></a>2.5外存储器</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机基础课程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 计算机基础 </tag>
+            
+            <tag> 课程 </tag>
+            
+            <tag> 复习笔记 </tag>
+            
+            <tag> 计算机体系结构 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>编译原理</title>
       <link href="2020/10/03/bian-yi-yuan-li/"/>
       <url>2020/10/03/bian-yi-yuan-li/</url>

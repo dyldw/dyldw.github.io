@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>dyldw的博客</title>
+  
+  <subtitle>欢迎来到这个博客 (⑅˃◡˂⑅)</subtitle>
+  <link href="https://dyldw.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://dyldw.github.io/"/>
+  <updated>2020-10-04T23:47:01.102Z</updated>
+  <id>https://dyldw.github.io/</id>
+  
+  <author>
+    <name>董一龙</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>计算机体系结构</title>
+    <link href="https://dyldw.github.io/2020/10/04/ji-suan-ji-ti-xi-jie-gou/"/>
+    <id>https://dyldw.github.io/2020/10/04/ji-suan-ji-ti-xi-jie-gou/</id>
+    <published>2020-10-04T14:24:00.000Z</published>
+    <updated>2020-10-04T23:47:01.102Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;计算体系结构–存储系统&quot;&gt;&lt;a href=&quot;#计算体系结构–存储系统&quot; class=&quot;headerlink&quot; title=&quot;计算体系结构–存储系统&quot;&gt;&lt;/a&gt;计算体系结构–存储系统&lt;/h1&gt;&lt;h2 id=&quot;1-存储体系概述&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="计算机基础课程" scheme="https://dyldw.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E8%AF%BE%E7%A8%8B/"/>
+    
+    
+    <category term="计算机基础" scheme="https://dyldw.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="课程" scheme="https://dyldw.github.io/tags/%E8%AF%BE%E7%A8%8B/"/>
+    
+    <category term="复习笔记" scheme="https://dyldw.github.io/tags/%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="计算机体系结构" scheme="https://dyldw.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编译原理</title>
+    <link href="https://dyldw.github.io/2020/10/03/bian-yi-yuan-li/"/>
+    <id>https://dyldw.github.io/2020/10/03/bian-yi-yuan-li/</id>
+    <published>2020-10-03T10:32:00.000Z</published>
+    <updated>2020-10-03T10:51:45.669Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;编译原理&quot;&gt;&lt;a href=&quot;#编译原理&quot; class=&quot;headerlink&quot; title=&quot;编译原理&quot;&gt;&lt;/a&gt;编译原理&lt;/h1&gt;&lt;h2 id=&quot;1-编译原理概论&quot;&gt;&lt;a href=&quot;#1-编译原理概论&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机基础课程" scheme="https://dyldw.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E8%AF%BE%E7%A8%8B/"/>
+    
+    
+    <category term="编译原理" scheme="https://dyldw.github.io/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/"/>
+    
+    <category term="计算机基础" scheme="https://dyldw.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="课程" scheme="https://dyldw.github.io/tags/%E8%AF%BE%E7%A8%8B/"/>
+    
+    <category term="复习笔记" scheme="https://dyldw.github.io/tags/%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++大作业--XXX管理程序</title>
+    <link href="https://dyldw.github.io/2020/10/02/c-da-zuo-ye/"/>
+    <id>https://dyldw.github.io/2020/10/02/c-da-zuo-ye/</id>
+    <published>2020-10-02T07:05:24.000Z</published>
+    <updated>2020-10-03T00:01:58.795Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;理工科大一往往会学习C/C++，期末会有大作业。这篇文章就是一个简单的C++大作业程序。我也是大一，所以觉着哪里写得不好欢迎在评论区提出。程序总体上讲是个“总分总”结构。&lt;/p&gt;
+&lt;h2 id=&quot;一-实现这个程序要八步。&quot;&gt;&lt;a href=&quot;#一-实现这个程序要八步。&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="C++" scheme="https://dyldw.github.io/tags/C/"/>
+    
+    <category term="大一" scheme="https://dyldw.github.io/tags/%E5%A4%A7%E4%B8%80/"/>
+    
+  </entry>
+  
+</feed>
