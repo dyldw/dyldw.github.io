@@ -29,8 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="dyldw的博客" type="application/atom+xml">
-</head>
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="dyldw的博客" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -536,7 +536,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
         c_ij <span class="token operator">=</span> 求和 a_ik <span class="token operator">*</span> b_kj 画图来讲，用找到一个就打勾算法，直到找不到没打勾的a_i了，时间复杂度是 <span class="token function">f</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span> 不会分析。</code></pre>
 <h2 id="向量与整数"><a href="#向量与整数" class="headerlink" title="向量与整数"></a>向量与整数</h2><p>进一步这个方法可以表示一个有限大的向量<br>$ \vec v (x,y,z)$<br>也可以等价于一个数<br>$V=x<em>size^2 + y</em>size + z $ </p>
 <h3 id="向量整数的加减乘性质"><a href="#向量整数的加减乘性质" class="headerlink" title="向量整数的加减乘性质"></a>向量整数的加减乘性质</h3><p>这个表示有一些比较好的性质。</p>
-<h4 id="向量整数的加法性质"><a href="#向量整数的加法性质" class="headerlink" title="向量整数的加法性质"></a>向量整数的加法性质</h4><p>设<br>$V_1=x_1<em>size^2 + y_1</em>size + z_1$<br>$V_2=x_2<em>size^2 + y_2</em>size + z_2$<br>$V_1+V_2=(x_1+x_2)*size^2 + (y_1+y_2)*size + (z_1+z_2)$</p>
+<h4 id="向量整数的加法性质"><a href="#向量整数的加法性质" class="headerlink" title="向量整数的加法性质"></a>向量整数的加法性质</h4><p>设<br>$V_1=x_1<em>size^2 + y_1</em>size + z_1 \$<br>$V_2=x_2<em>size^2 + y_2</em>size + z_2 \$<br>$V_1+V_2=(x_1+x_2)*size^2 + (y_1+y_2)*size + (z_1+z_2) \$</p>
 <p>等价于$ \vec v_1 + \vec v_2$ ，用这种数值加法的好处是可以将一次向量加法简化成一次整数加法，对于三维向量在多次进行加法的情况下可以节省三分之二的空间，少做三分之二次加法。</p>
 <h4 id="加法到减法的扩展"><a href="#加法到减法的扩展" class="headerlink" title="加法到减法的扩展"></a>加法到减法的扩展</h4><p>因为V的表示范围是有限大的第一象限，如果要进行减法，可能会出现负数超出表示范围，对此我们可以通过对x,y,z加一个基数来解决这个问题。这个基数是约定的，不占空间，也不影响时间复杂度。</p>
 <p>我自己感觉这个加减法挺有意义的。向量-&gt;很多次整数运算-&gt;向量 比 向量-&gt;很多次向量运算-&gt;向量 要划算很多。</p>
