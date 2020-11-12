@@ -6,7 +6,7 @@
   <link href="https://dyldw.github.io/atom.xml" rel="self"/>
   
   <link href="https://dyldw.github.io/"/>
-  <updated>2020-10-04T23:47:01.102Z</updated>
+  <updated>2020-11-12T00:36:48.702Z</updated>
   <id>https://dyldw.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>向量整数</title>
+    <link href="https://dyldw.github.io/2020/11/12/xiang-liang-zheng-shu/"/>
+    <id>https://dyldw.github.io/2020/11/12/xiang-liang-zheng-shu/</id>
+    <published>2020-11-12T00:17:00.000Z</published>
+    <updated>2020-11-12T00:36:48.702Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;向量整数&quot;&gt;&lt;a href=&quot;#向量整数&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="数据结构" scheme="https://dyldw.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+    <category term="计算机基础" scheme="https://dyldw.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="数据结构" scheme="https://dyldw.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="个人思考" scheme="https://dyldw.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%80%9D%E8%80%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://dyldw.github.io/2020/10/12/xiang-lian-cun-chu-qi/"/>
+    <id>https://dyldw.github.io/2020/10/12/xiang-lian-cun-chu-qi/</id>
+    <published>2020-10-12T07:45:46.103Z</published>
+    <updated>2020-10-12T07:55:18.763Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Cache地址映射与变换方法&quot;&gt;&lt;a href=&quot;#Cache地址映射与变换方法&quot; class=&quot;headerlink&quot; title=&quot;Cache地址映射与变换方法&quot;&gt;&lt;/a&gt;Cache地址映射与变换方法&lt;/h1&gt;&lt;h2 id=&quot;全相联映射&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>计算机体系结构</title>
